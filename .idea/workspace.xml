@@ -2,21 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04ac2bbe-ff35-40ff-be44-16172a3c8451" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/framework-customizations/extensions/shortcodes/shortcodes/text/config.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework-customizations/extensions/shortcodes/shortcodes/text/options.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework-customizations/extensions/shortcodes/shortcodes/text/static.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework-customizations/extensions/shortcodes/shortcodes/text/static/css/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework-customizations/extensions/shortcodes/shortcodes/text/static/img/page_builder.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework-customizations/extensions/shortcodes/shortcodes/text/views/view.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framework-customizations/extensions/shortcodes/shortcodes/col/options.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framework-customizations/extensions/shortcodes/shortcodes/col/static.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framework-customizations/extensions/shortcodes/shortcodes/col/views/view.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gradient-master/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Gradient-master/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework-customizations/extensions/media/extensions/slider/extensions/flex-slider/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework-customizations/extensions/media/extensions/slider/extensions/carousel-block/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework-customizations/extensions/media/extensions/slider/extensions/flex-slider/manifest.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework-customizations/extensions/media/extensions/slider/extensions/carousel-block/manifest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework-customizations/extensions/media/extensions/slider/extensions/flex-slider/options/custom.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework-customizations/extensions/media/extensions/slider/extensions/carousel-block/options/custom.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework-customizations/extensions/media/extensions/slider/extensions/flex-slider/static/images/preview.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/framework-customizations/extensions/media/extensions/slider/extensions/carousel-block/static/images/preview.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework-customizations/extensions/media/extensions/slider/extensions/flex-slider/static/images/thumb.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/framework-customizations/extensions/media/extensions/slider/extensions/carousel-block/static/images/thumb.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework-customizations/extensions/media/extensions/slider/extensions/flex-slider/views/flex-slider.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework-customizations/extensions/media/extensions/slider/extensions/carousel-block/views/carousel-block.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework-customizations/extensions/media/extensions/slider/extensions/carousel-block/views/carousel-block.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework-customizations/extensions/media/extensions/slider/extensions/carousel-block/views/carousel-block.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework-customizations/extensions/shortcodes/shortcodes/column/views/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework-customizations/extensions/shortcodes/shortcodes/column/views/view.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,6 +46,7 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\server\OpenServer\domains\wordpress\wordpress_gradient\wp-content\themes\gradient master\framework-customizations\extensions\shortcodes\shortcodes" />
+      <recent name="D:\server\OpenServer\domains\wordpress\wordpress_gradient\wp-content\themes\gradient master\framework-customizations\extensions\shortcodes\extensions\page-builder\includes\page-builder\includes\items-corrector" />
       <recent name="D:\server\OpenServer\domains\wordpress\wordpress_gradient\wp-content\themes\gradient master\framework-customizations\extensions\media\extensions\slider\extensions" />
       <recent name="D:\server\OpenServer\domains\wordpress\wordpress_gradient\wp-content\themes\gradient master" />
       <recent name="D:\server\OpenServer\domains\wordpress\wordpress_gradient\wp-content\themes\gradient master\assets" />
@@ -82,7 +74,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1596022520126</updated>
-      <workItem from="1596022521335" duration="17332000" />
+      <workItem from="1596022521335" duration="19275000" />
+      <workItem from="1596043558272" duration="2683000" />
     </task>
     <servers />
   </component>
@@ -94,7 +87,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

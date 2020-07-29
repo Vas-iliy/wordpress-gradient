@@ -3,7 +3,7 @@
 <div class="row align-items-center">
     <div class="col-lg-11">
         <div class="carousel-cont">
-            <?foreach ($data['slides'] as $slide): $i = 1;?>
+            <?$i = 1; foreach ($data['slides'] as $slide): ;?>
                 <div class="carousel-iterator">
                     <div class="row">
                         <div class="col-12">
