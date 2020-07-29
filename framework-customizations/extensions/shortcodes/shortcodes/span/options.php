@@ -3,15 +3,15 @@
 }
 
 $options = array(
-	'span_wrapper'       => array(
+	'link'       => array(
 		'type' => 'checkbox',
-		'label' => __( 'Wrap in div', 'fw' ),
+		'label' => __( 'Wrap in link', 'fw' ),
 		'text' => '',
 	),
 
-	'span_wrapper_class'       => array(
+	'span_wrapper_link'       => array(
 		'type' => 'text',
-		'label' => __( 'Wrapper Class', 'fw' )
+		'label' => __( 'Wrapper link', 'fw' )
 	),
 
 	'span_icon'       => array(
@@ -29,12 +29,6 @@ $options = array(
 		'type'  => 'text',
 		'label' => __( 'Span Class', 'fw' ),
 		'desc'  => __( 'Span Class', 'fw' ),
-	),
-
-	'span_id'    => array(
-		'type'  => 'text',
-		'label' => __( 'Span ID', 'fw' ),
-		'desc'  => __( 'Span ID', 'fw' ),
 	),
 
 	'span_data_attrs'    => array(

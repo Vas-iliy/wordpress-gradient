@@ -3,12 +3,11 @@
 }
 ?>
 
-<?if(!empty($atts['span_wrapper'])):?>
-    <div <?if(!empty($atts['span_wrapper_class'])) echo "class='{$atts['span_wrapper_class']}'"?>>
+<?if(!empty($atts['link'])):?>
+    <a <?if(!empty($atts['span_wrapper_link'])) echo "href='{$atts['span_wrapper_link']}'"?>>
 <?endif;?>
     <span
         <?if(!empty($atts['span_class'])) echo "class='{$atts['span_class']}'"?>
-        <?if(!empty($atts['span_id'])) echo "id='{$atts['span_id']}'"?>
         <?if(!empty($atts['span_data_attrs'])) echo $atts['span_data_attrs']?>
     >
 
@@ -18,7 +17,7 @@
 
         <?if(!empty($atts['span_content'])) echo $atts['span_content']?>
     </span>
-<?if(!empty($atts['span_wrapper'])):?>
-    </div>
+<?if(!empty($atts['link'])):?>
+    </a>
 <?endif;?>
 
