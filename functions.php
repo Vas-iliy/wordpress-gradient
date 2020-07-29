@@ -143,17 +143,10 @@ add_action( 'widgets_init', 'gradient_widgets_init' );
  * Enqueue scripts and styles.
  */
 function gradient_scripts() {
-	wp_enqueue_style( 'gradient-style', get_stylesheet_uri(), array(), _S_VERSION );
-	wp_style_add_data( 'gradient-style', 'rtl', 'replace' );
+	wp_enqueue_style( 'gradient-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'gradient-style-scc', get_template_directory_uri() . '/assets/css/style.css' );
+	wp_enqueue_style( 'gradient-bootstrapcdn-scc', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css' );
 
-	wp_enqueue_script( 'gradient-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
-
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-		wp_enqueue_script( 'comment-reply' );
-	}
+	wp_enqueue_script('gradient-kit-fontawesome-js', 'https://kit.fontawesome.com/ff2f3aab2f.js');
 }
 add_action( 'wp_enqueue_scripts', 'gradient_scripts' );
-
-/**
- * Implement the Custom Header feature.
- */
