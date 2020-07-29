@@ -158,7 +158,7 @@ function gradient_scripts() {
 
 	wp_enqueue_script('gradient-ajax-js', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js', array(), '', true);
 	wp_enqueue_script('gradient-bootstrap-js', 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js', array(), '', true);
-	wp_enqueue_script('gradient-bootstrap-js', get_template_directory_uri() . '/assets/js/index.js', array(), '', true);
+	wp_enqueue_script('gradient-index-js', get_template_directory_uri() . '/assets/js/index.js', array(), '', true);
 
 }
 add_action( 'wp_enqueue_scripts', 'gradient_scripts' );
