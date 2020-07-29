@@ -7,6 +7,8 @@
  * @package gradient
  */
 
+require_once get_template_directory() . '/Law_Header_Memu.php';
+
 if ( ! defined( '_S_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
 	define( '_S_VERSION', '1.0.0' );
@@ -50,7 +52,8 @@ if ( ! function_exists( 'gradient_setup' ) ) :
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus(
 			array(
-				'menu-1' => esc_html__( 'Primary', 'gradient' ),
+				'header-menu' => esc_html__( 'Меню в шапке', 'gradient' ),
+				'footer-menu' => esc_html__( 'Меню в подвале', 'gradient' ),
 			)
 		);
 

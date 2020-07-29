@@ -14,14 +14,12 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light"><a class="navbar-brand" href="./index.html"><img class="logo" src="./img/logo.png" alt="logo"/></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar"><span class="navbar-toggler-icon"></span></button>
     <div class="collapse navbar-collapse" id="main-navbar">
-        <ul class="navbar-nav">
-            <li class="nav-item active"><a class="nav-link" href="./about.html">Мы</a></li>
-            <li class="nav-item"><a class="nav-link" href="./portfolio.html">Проекты</a></li>
-            <li class="nav-item"><a class="nav-link" href="./services.html">Услуги</a></li>
-            <li class="nav-item"><a class="nav-link" href="./blog.html">Блог</a></li>
-            <li class="nav-item"><a class="nav-link" href="./contacts.html">Контакты</a></li>
-            <button class="btn-togler activity ml-lg-5" type="submit">RU</button>
-            <button class="btn-togler" type="submit">EN</button>
-        </ul>
+	    <? wp_nav_menu(array(
+			    'theme_location' => 'header-menu',
+			    'container' => false,
+			    'menu_class' => 'navbar-nav',
+			    'walker' => new Law_Header_Memu
+		    )
+	    ) ?>
     </div>
 </nav>
