@@ -148,5 +148,14 @@ function gradient_scripts() {
 	wp_enqueue_style( 'gradient-bootstrapcdn-scc', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css' );
 
 	wp_enqueue_script('gradient-kit-fontawesome-js', 'https://kit.fontawesome.com/ff2f3aab2f.js');
+
+	wp_deregister_script( 'jquery' );
+	wp_register_script( 'jquery', 'https://code.jquery.com/jquery-3.3.1.slim.min.js');
+	wp_enqueue_script( 'jquery' );
+
+	wp_enqueue_script('gradient-ajax-js', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js', array(), '', true);
+	wp_enqueue_script('gradient-bootstrap-js', 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js', array(), '', true);
+	wp_enqueue_script('gradient-bootstrap-js', get_template_directory_uri() . '/assets/js/index.js', array(), '', true);
+
 }
 add_action( 'wp_enqueue_scripts', 'gradient_scripts' );
