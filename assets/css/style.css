@@ -117,6 +117,7 @@
     font-weight: 700;
     margin-bottom: 30px;
 }
+
 .carousel-navigation
 {
     align-items: center;
@@ -205,6 +206,11 @@
     margin-left: 44px;
     margin-top: 44px;
     width: 230px;
+}
+@media(max-width: 576px){
+    .item__title{
+        font-size : 22px
+    }
 }
 .item1
 {

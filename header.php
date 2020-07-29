@@ -11,7 +11,10 @@
 
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light"><a class="navbar-brand" href="./index.html"><img class="logo" src="./img/logo.png" alt="logo"/></a>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="<?=home_url('/');?>">
+        <img class="logo" src="<?=get_template_directory_uri()?>/assets/img/logo.png" alt="logo"/>
+    </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar"><span class="navbar-toggler-icon"></span></button>
     <div class="collapse navbar-collapse" id="main-navbar">
 	    <? wp_nav_menu(array(
