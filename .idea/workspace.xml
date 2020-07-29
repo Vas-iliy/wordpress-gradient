@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="04ac2bbe-ff35-40ff-be44-16172a3c8451" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gradient-master/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Gradient-master/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="04ac2bbe-ff35-40ff-be44-16172a3c8451" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +38,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\server\OpenServer\domains\wordpress\wordpress_gradient\wp-content\themes\gradient master\framework-customizations\extensions\shortcodes\shortcodes" />
       <recent name="D:\server\OpenServer\domains\wordpress\wordpress_gradient\wp-content\themes\gradient master" />
       <recent name="D:\server\OpenServer\domains\wordpress\wordpress_gradient\wp-content\themes\gradient master\assets" />
     </key>
@@ -67,7 +65,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1596022520126</updated>
-      <workItem from="1596022521335" duration="9106000" />
+      <workItem from="1596022521335" duration="9354000" />
     </task>
     <servers />
   </component>
