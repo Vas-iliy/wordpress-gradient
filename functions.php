@@ -128,7 +128,7 @@ add_action( 'after_setup_theme', 'gradient_content_width', 0 );
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
 function gradient_widgets_init() {
-	register_sidebar(
+	/*register_sidebar(
 		array(
 			'name'          => esc_html__( 'Sidebar', 'gradient' ),
 			'id'            => 'sidebar-1',
@@ -137,6 +137,41 @@ function gradient_widgets_init() {
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',
 			'after_title'   => '</h2>',
+		)
+	);*/
+
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Sidebar Top', 'girly' ),
+			'id'            => 'sidebar-top',
+			'before_widget' => '<span class="question">',
+			'after_widget'  => '</span>',
+			'before_title'  => '<h4 class="text-white text-strong">',
+			'after_title'   => '</h4>',
+		)
+	);
+
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Sidebar', 'girly' ),
+			'id'            => 'sidebar',
+			'description'   => esc_html__( 'Add widgets here.', 'girly' ),
+			'before_widget' => '<div class="s-12 m-6 l-3 xl-3">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h4 class="text-white text-strong">',
+			'after_title'   => '</h4>',
+		)
+	);
+
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Sidebar Social', 'girly' ),
+			'id'            => 'sidebar-soc',
+			'description'   => esc_html__( 'Add widgets here.', 'girly' ),
+			'before_widget' => '<div class="s-12 m-6 l-3 xl-3">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h4 class="text-white text-strong">',
+			'after_title'   => '</h4>',
 		)
 	);
 }

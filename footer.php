@@ -1,15 +1,10 @@
 
 <footer>
-    <div class="container"><span class="question">   Остались вопросы? Напишите нами</span>
-        <div class="row align-items-center mb-3 justify-content-between">
-            <div class="col-lg-7 col-md-12 col-sm-12">
-                <h1 class="email"> go@thegradient.ru</h1>
-            </div>
-            <div class="col-lg-auto col-md-12 col-sm-12">
-                <input class="begin-project" type="submit" name="agreement" value="Начать проект"/>
-            </div>
-        </div>
-        <div class="line"></div>
+    <div class="container">
+        <? get_sidebar('top'); ?>
+	    <? get_sidebar(); ?>
+
+        <? get_sidebar('social'); ?>
         <div class="row mt-3 justify-content-between">
             <div class="col-lg-4 col-6">
                 <p class="d-block">САНКТ-ПЕТЕРБУРГ, ТИХОРЕЦКИЙ 17Б</p>
