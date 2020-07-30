@@ -3,28 +3,25 @@
 }
 
 $options = array(
-	'content'    => array(
-		'type'  => 'textarea',
-		'label' => __( 'Text Content', 'fw' ),
-		'desc'  => __( 'Text Content', 'fw' ),
+	'font_size'       => array(
+		'type' => 'checkbox',
+		'label' => __( 'change font size?', 'fw' ),
+		'text' => '',
 	),
-
+	'size'    => array(
+		'type'  => 'text',
+		'label' => __( 'Size', 'fw' ),
+		'desc'  => __( 'Text Size', 'fw' ),
+	),
 	'text_class'    => array(
 		'type'  => 'text',
 		'label' => __( 'Text Class', 'fw' ),
 		'desc'  => __( 'Text Class', 'fw' ),
 	),
-
-	'text_id'    => array(
-		'type'  => 'text',
-		'label' => __( 'Text ID', 'fw' ),
-		'desc'  => __( 'Text ID', 'fw' ),
-	),
-
-	'text_data_attrs'    => array(
-		'type'  => 'text',
-		'label' => __( 'Attributes', 'fw' ),
-		'desc'  => __( 'Attributes', 'fw' ),
+	'content'    => array(
+		'type'  => 'textarea',
+		'label' => __( 'Text Content', 'fw' ),
+		'desc'  => __( 'Text Content', 'fw' ),
 	)
 
 );

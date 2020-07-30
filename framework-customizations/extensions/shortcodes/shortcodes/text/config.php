@@ -4,6 +4,6 @@ $cfg = array();
 
 $cfg['page_builder'] = array(
 	'title'         => __('Text', 'fw'),
-	'description'   => __('Add a Span', 'fw'),
+	'description'   => __('Add a Text', 'fw'),
 	'tab'           => __('Content Elements', 'fw'),
 );

@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04ac2bbe-ff35-40ff-be44-16172a3c8451" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/framework-customizations/extensions/shortcodes/shortcodes/col/options.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework-customizations/extensions/shortcodes/shortcodes/col/static.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework-customizations/extensions/shortcodes/shortcodes/col/views/view.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework-customizations/extensions/media/extensions/slider/extensions/carousel-block/views/carousel-block.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework-customizations/extensions/media/extensions/slider/extensions/carousel-block/views/carousel-block.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework-customizations/extensions/shortcodes/shortcodes/column/views/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework-customizations/extensions/shortcodes/shortcodes/column/views/view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework-customizations/extensions/shortcodes/shortcodes/text/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework-customizations/extensions/shortcodes/shortcodes/text/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework-customizations/extensions/shortcodes/shortcodes/text/options.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework-customizations/extensions/shortcodes/shortcodes/text/options.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework-customizations/extensions/shortcodes/shortcodes/text/static.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework-customizations/extensions/shortcodes/shortcodes/text/static.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework-customizations/extensions/shortcodes/shortcodes/text/static/css/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework-customizations/extensions/shortcodes/shortcodes/text/views/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework-customizations/extensions/shortcodes/shortcodes/text/views/view.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -75,7 +75,7 @@
       <option name="presentableId" value="Default" />
       <updated>1596022520126</updated>
       <workItem from="1596022521335" duration="19275000" />
-      <workItem from="1596043558272" duration="2683000" />
+      <workItem from="1596043558272" duration="3968000" />
     </task>
     <servers />
   </component>
