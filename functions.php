@@ -53,7 +53,9 @@ if ( ! function_exists( 'gradient_setup' ) ) :
 		register_nav_menus(
 			array(
 				'header-menu' => esc_html__( 'Меню в шапке', 'gradient' ),
-				'footer-menu' => esc_html__( 'Меню в подвале', 'gradient' ),
+				'footer-left-menu' => esc_html__( 'Меню в подвале левое', 'gradient' ),
+				'footer-centr-menu' => esc_html__( 'Меню в подвале центральное', 'gradient' ),
+				'footer-right-menu' => esc_html__( 'Меню в подвале правое', 'gradient' ),
 			)
 		);
 
@@ -128,18 +130,6 @@ add_action( 'after_setup_theme', 'gradient_content_width', 0 );
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
 function gradient_widgets_init() {
-	/*register_sidebar(
-		array(
-			'name'          => esc_html__( 'Sidebar', 'gradient' ),
-			'id'            => 'sidebar-1',
-			'description'   => esc_html__( 'Add widgets here.', 'gradient' ),
-			'before_widget' => '<section id="%1$s" class="widget %2$s">',
-			'after_widget'  => '</section>',
-			'before_title'  => '<h2 class="widget-title">',
-			'after_title'   => '</h2>',
-		)
-	);*/
-
 	register_sidebar(
 		array(
 			'name'          => esc_html__( 'Sidebar Top', 'girly' ),
@@ -150,16 +140,16 @@ function gradient_widgets_init() {
 			'after_title'   => '</h4>',
 		)
 	);
-
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Sidebar', 'girly' ),
-			'id'            => 'sidebar',
+			'name'          => esc_html__( 'Sidebar Form', 'girly' ),
+			'id'            => 'sidebar-form',
+			'class'         => 'sidebar-form',
 			'description'   => esc_html__( 'Add widgets here.', 'girly' ),
-			'before_widget' => '<div class="s-12 m-6 l-3 xl-3">',
+			'before_widget' => '<div class="form">',
 			'after_widget'  => '</div>',
-			'before_title'  => '<h4 class="text-white text-strong">',
-			'after_title'   => '</h4>',
+			'before_title'  => '<h1 class="email">',
+			'after_title'   => '</h1>',
 		)
 	);
 
@@ -168,10 +158,22 @@ function gradient_widgets_init() {
 			'name'          => esc_html__( 'Sidebar Social', 'girly' ),
 			'id'            => 'sidebar-soc',
 			'description'   => esc_html__( 'Add widgets here.', 'girly' ),
-			'before_widget' => '<div class="s-12 m-6 l-3 xl-3">',
+			'before_widget' => '<div>',
 			'after_widget'  => '</div>',
 			'before_title'  => '<h4 class="text-white text-strong">',
 			'after_title'   => '</h4>',
+		)
+	);
+
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Sidebar', 'girly' ),
+			'id'            => 'sidebar',
+			'description'   => esc_html__( 'Add widgets here.', 'girly' ),
+			'before_widget' => '<div class="col-lg-3 col-4 col-6">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h3 class="form__title">',
+			'after_title'   => '</h3>',
 		)
 	);
 }
