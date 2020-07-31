@@ -6,7 +6,7 @@
 
         <? get_sidebar('social'); ?>
 
-        <? get_sidebar('menu'); ?>
+        <? get_sidebar(); ?>
     </div>
 </footer>
 

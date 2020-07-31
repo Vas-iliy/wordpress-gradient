@@ -1189,3 +1189,9 @@ footer
 .stages .stages__line {
     margin-top: 20px;
 }
+.filter__buttons .menu .filter__button a {
+    color: black;
+}
+.filter__buttons .menu #menu-item-305  a {
+    color: red;
+}

@@ -12,6 +12,22 @@ $query = new WP_Query(array(
 ));
 ?>
 
+<section class="filter">
+    <div class="container">
+        <div class="row justify-content-lg-between justify-content-around">
+            <div class="filter__buttons col-lg-8">
+	            <? wp_nav_menu(array(
+			            'theme_location' => 'rubric-menu',
+			            'container' => false,
+			            'walker' => new Law_Rubric_Memu
+		            )
+	            ) ?>
+            </div>
+        </div>
+        <div class="filter__underline"></div>
+    </div>
+</section>
+
 <?if($query->have_posts()): while ($query->have_posts()): $query->the_post();?>
     <section class="block_cases">
         <div class="container"

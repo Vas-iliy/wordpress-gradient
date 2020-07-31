@@ -8,6 +8,7 @@
  */
 
 require_once get_template_directory() . '/Law_Header_Memu.php';
+require_once get_template_directory() . '/Law_Rubric_Memu.php';
 
 if ( ! defined( '_S_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
@@ -56,6 +57,8 @@ if ( ! function_exists( 'gradient_setup' ) ) :
 				'footer-left-menu' => esc_html__( 'Меню в подвале левое', 'gradient' ),
 				'footer-centr-menu' => esc_html__( 'Меню в подвале центральное', 'gradient' ),
 				'footer-right-menu' => esc_html__( 'Меню в подвале правое', 'gradient' ),
+				'rubric-menu' => esc_html__( 'Меню Рубрик', 'gradient' ),
+				'rubric' => esc_html__( 'Меню Рубрик', 'gradient' ),
 			)
 		);
 
