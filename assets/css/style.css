@@ -633,6 +633,7 @@ footer
 }
 .cases__item__right
 {
+    position:relative;
     background: #eee;
     width: 100%;
 }
@@ -644,10 +645,6 @@ footer
     margin: 0;
     padding: 0;
     width: 50%;
-}
-.specialisations__item
-{
-    list-style: none;
 }
 .btn-show
 {
@@ -674,18 +671,34 @@ footer
 }
 .case__description
 {
-    display: flex;
-    display: -ms-flexbox;
-    display: -webkit-box;
-    flex-direction: column;
-    height: 100%;
-    justify-content: space-between;
-    ms-flex-direction: column;
-    ms-flex-pack: justify;
     padding: 20px;
-    webkit-box-direction: normal;
-    webkit-box-orient: vertical;
-    webkit-box-pack: justify;
+}
+.case__description__info {
+    padding: 20px;
+    width: 100%;
+    height: 100px;
+}
+.case__description__info .cases_item_specialisations a {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+}
+.form__case {
+    padding: 20px;
+    width: 100%;
+    height: 20px;
+}
+.form__case .btn-show {
+    position:absolute;
+    bottom:0;
+    display: flex;
+    justify-content: end;
+    padding-bottom: 10px;
+}
+.form__case .btn-show img {
+    margin-bottom: 5px;
 }
 .project-form
 {
