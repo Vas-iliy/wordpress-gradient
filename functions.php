@@ -47,7 +47,7 @@ if ( ! function_exists( 'gradient_setup' ) ) :
 		 *
 		 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 		 */
-		add_theme_support( 'post-thumbnails' );
+		add_theme_support( 'post-thumbnails', array('post', 'portfolio'));
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus(
@@ -199,3 +199,41 @@ function gradient_scripts() {
 
 }
 add_action( 'wp_enqueue_scripts', 'gradient_scripts' );
+
+add_action('init', 'my_custom_init');
+function my_custom_init(){
+	register_post_type('portfolio', array(
+		'label' => null,
+		'labels'             => array(
+			'name'               => 'Портфолио', // Основное название типа записи
+			'singular_name'      => 'Портфолио', // отдельное название записи
+			'add_new'            => 'Добавить работу',
+			'add_new_item'       => 'Добавить новую работу',
+			'edit_item'          => 'Редактировать работу',
+			'new_item'           => 'Новая работа',
+			'view_item'          => 'Посмотреть работу',
+			'search_items'       => 'Найти работу',
+			'not_found'          =>  'Работ не найдено',
+			'not_found_in_trash' => 'В корзине работ не найдено',
+			'parent_item_colon'  => '',
+			'menu_name'          => 'Портфолио'
+
+		),
+		'description' => 'Это наши работы в портфолио',
+		'public'             => true,
+		'publicly_queryable' => true,
+		'exclude_from_search'=> false,
+		'show_ui'            => true,
+		'show_in_menu'       => true,
+		'show_in_admin_bar'  => true,
+		'show_in_nav_menus'  => true,
+		'query_var'          => true,
+		'rewrite'            => true,
+		'has_archive'        => false,
+		'hierarchical'       => false,
+		'menu_position'      => 4,
+		'menu_icon'          => 'dashicons-format-image',
+		'supports'           => array('title','editor','author','thumbnail','excerpt'),
+		'taxonomies'         => array('skills')
+	) );
+}

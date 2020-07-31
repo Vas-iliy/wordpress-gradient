@@ -3,7 +3,7 @@
 $cfg = array();
 
 $cfg['page_builder'] = array(
-	'title'         => __('Div', 'fw'),
-	'description'   => __('Add a Div', 'fw'),
+	'title'         => __('List', 'fw'),
+	'description'   => __('Add a List', 'fw'),
 	'tab'           => __('Content Elements', 'fw'),
 );

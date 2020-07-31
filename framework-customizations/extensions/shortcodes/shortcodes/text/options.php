@@ -22,6 +22,16 @@ $options = array(
 		'type'  => 'textarea',
 		'label' => __( 'Text Content', 'fw' ),
 		'desc'  => __( 'Text Content', 'fw' ),
-	)
+	),
+	'div'       => array(
+		'type' => 'checkbox',
+		'label' => __( 'Wrap in div', 'fw' ),
+		'text' => '',
+	),
+
+	'text_wrapper_div'       => array(
+		'type' => 'text',
+		'label' => __( 'Wrapper div', 'fw' )
+	),
 
 );
