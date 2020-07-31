@@ -202,11 +202,11 @@ add_action( 'wp_enqueue_scripts', 'gradient_scripts' );
 
 add_action('init', 'my_custom_init');
 function my_custom_init(){
-	register_post_type('portfolio', array(
+	register_post_type('blog', array(
 		'label' => null,
 		'labels'             => array(
-			'name'               => 'Портфолио', // Основное название типа записи
-			'singular_name'      => 'Портфолио', // отдельное название записи
+			'name'               => 'Блог', // Основное название типа записи
+			'singular_name'      => 'Блог', // отдельное название записи
 			'add_new'            => 'Добавить работу',
 			'add_new_item'       => 'Добавить новую работу',
 			'edit_item'          => 'Редактировать работу',
@@ -216,7 +216,16 @@ function my_custom_init(){
 			'not_found'          =>  'Работ не найдено',
 			'not_found_in_trash' => 'В корзине работ не найдено',
 			'parent_item_colon'  => '',
-			'menu_name'          => 'Портфолио'
+			'all_items'             => 'Все работы блога',
+			'archives'              => 'Архивы блога',
+			'insert_into_item'      => 'Вставить работу в блог',
+			'uploaded_to_this_item' => 'Загруженные для этой работы блог',
+			'featured_image'        => 'Миниатюра работы',
+			'filter_items_list'     => 'Фильтровать список работ',
+			'items_list_navigation' => 'Навигация по списку работ',
+			'items_list'            => 'Список работ',
+			'menu_name'             => 'Блог',
+			'name_admin_bar'        => 'Работу',
 
 		),
 		'description' => 'Это наши работы в портфолио',
@@ -234,6 +243,38 @@ function my_custom_init(){
 		'menu_position'      => 4,
 		'menu_icon'          => 'dashicons-format-image',
 		'supports'           => array('title','editor','author','thumbnail','excerpt'),
-		'taxonomies'         => array('skills')
+		'taxonomies'         => array()
 	) );
 }
+
+add_filter('post_type_labels_post', 'rename_posts_labels');
+function rename_posts_labels( $labels ){
+	$new = array(
+		'name'               => 'Портфолио',
+		'singular_name'      => 'Портфолио',
+		'add_new'            => 'Добавить работу',
+		'add_new_item'       => 'Добавить новую работу',
+		'edit_item'          => 'Редактировать работу',
+		'new_item'           => 'Новая работа',
+		'view_item'          => 'Посмотреть работу',
+		'search_items'       => 'Найти работу',
+		'not_found'          =>  'Работ не найдено',
+		'not_found_in_trash' => 'В корзине работ не найдено',
+		'parent_item_colon'     => '',
+		'all_items'             => 'Все работы портфолио',
+		'archives'              => 'Архивы портфолио',
+		'insert_into_item'      => 'Вставить работу в портфолио',
+		'uploaded_to_this_item' => 'Загруженные для этой работы портфолио',
+		'featured_image'        => 'Миниатюра работы',
+		'filter_items_list'     => 'Фильтровать список работ',
+		'items_list_navigation' => 'Навигация по списку работ',
+		'items_list'            => 'Список работ',
+		'menu_name'             => 'Портфолио',
+		'name_admin_bar'        => 'Работу', // пункте "добавить"
+	);
+
+	return (object) array_merge( (array) $labels, $new );
+}
+
+
+
